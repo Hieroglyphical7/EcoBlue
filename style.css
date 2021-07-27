@@ -1,91 +1,317 @@
-h1 {
-    text-align: center;
-    font-family: sans-serif;
-    font-size: 4em;
-}
-
-h2 {
-    font-family: sans-serif;
-}
-
-h3 {
+*{
     margin: 0;
-    padding: 19px 15px;
-    font-family: monospace;
-    font-size: 3em;
-    display: block;
-    float: left;
-}
-
-a {
-    font-family: sans-serif;
-}
-
-button {
-    font-weight: bolder;
-    color: yellow;
-    background-color: black;
-}
-
-div {
-    height: auto;
-    padding: 5px;
-    margin-bottom: 25px;
-    text-align: center;
-}
-
-.left {
-    float: left;
-    width: 45%;
-    margin-left: 2.5%;
-}
-
-.right {
-    float: right;
-    width: 45%;
-    margin-right: 2.5%;
+    padding: 0;
+    font-family: 'Manrope', sans-serif;
+    box-sizing: border-box; 
 }
 
 body, html {
     margin: 0px;
 }
 
-#navbar {
-    padding-top: 0%;
-    height: 80px;
-    width: 100%;
-    overflow: hidden;
-    background-color: lightgreen;
-    margin-left: 0%;
-    position: sticky;
+/*System Design Components*/
+#h1{
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 88px;
+    letter-spacing: 3px;
 }
 
-.navlink {
-    float: right;
-    display: block;
+#h2{ 
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 64px;
+    letter-spacing: 1.7px;
+}
+
+#h3{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+#body{
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: .9px;
+}
+
+a{
     color: black;
-    text-align: center;
-    padding: 33px 20px;
+} 
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+/*Nav bar*/
+#navbar {
+    position: sticky;
+    width: 100%;
+    display: flex;
+    height: 5rem;
+    justify-content: space-around;
+    background-color: transparent;
+}
+
+.name{
+    display: flex;
+    align-items: center;
+}
+
+.navLink{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+}
+
+.navLink div{
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLink li{
+    margin-inline: 1rem;
+    list-style: none;
+}
+
+.navLink a{
+    color: #B3DFFF;
     text-decoration: none;
 }
 
-.navlink:hover, .linkSelected {
-    color: white;
-    background-color: green;
+.navLink a:hover{
+    color: #3FAEFF;
 }
 
-#login {
+#active{
+    color: #3FAEFF;
+}
+
+#login button{
+    padding: 8px 20px;
+    border: none;
+    transition: all 0.3s ease 0s;
+    font-weight: bold;
     background-color: skyblue;
+    color: royalblue;
 }
 
-#login:hover, .loginSelected {
+#login button:hover{
     background-color: royalblue;
+    color: skyblue;
 }
 
-#quiz {
-    background-color: rgb(225, 225, 96);
+
+
+/*Section Divider*/
+section{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-#quiz:hover, .quizSelected {
-    background-color: goldenrod;
+.takeQuiz{
+    width: 7rem;
+    height: 2rem;
+    background-color: #B3DFFF;
+    border-radius: 8px;
+    color:white;
+    margin-top: 1rem;
+    border: none;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.takeQuiz:hover{
+    transform: translateY(-3px);
+    background-color: #ABF0A0;
+    color: white;
+}
+
+.learnMore{
+    margin-top: 1rem;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+    color: #FFB3F3;
+}
+
+.learnMore:hover{
+    color: black;
+    transform: translateY(-2px);
+}
+
+
+
+/*Landing*/
+.landing{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.content-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 15rem;
+}
+
+.titleImage{
+    width: 40rem;
+}
+
+.infoText{
+    width: 40rem;
+}
+
+.factsImg{
+    width: 40rem;
+}
+
+.findCleaner{
+    background-color: #BEFFB3;
+    height: 25rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.findCleaner #h1{
+    color: white;
+}
+
+.findCleaner .takeQuiz{
+    background-color: white;
+    color: black;
+    width: 10rem;
+    height: 3rem;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+
+/*Dt6*/
+.dt6{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: #41C3DF;
+}
+
+.dt6 div{
+    margin-inline: 4rem;
+}
+
+.whoAreWe{
+    align-items: center;
+    justify-content: center;
+    background-color: #FFB3F3;
+    height: 48rem;
+    margin-bottom: 10rem;
+}
+
+.whoAreWe #body{
+    margin-top: 1rem;
+}
+
+.whoAreWe img{
+    margin-top: 2rem;
+    width: 60rem;
+}
+
+
+/*Footer*/
+#footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #2A9046;
+}
+
+#footer #h2{
+    color: var(--offwhite);
+    font-weight: 800;
+}
+
+#footer #h3{
+    color: var(--offwhite);
+    font-weight: 800;
+}
+
+footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#footer-title{
+    width: 30vw;
+}
+
+
+#form{
+    margin-top: 20px;
+}
+
+form{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    width: 10vw;
+    height: 1.5vw;
+}
+
+textarea{
+    resize: none;
+    width: 100%;
+    height: 100px;
+}
+
+input, textarea{
+    outline: none;
+    margin-top: .5vw;
+    border: 1px solid var(--offwhite);
+}
+
+#submit{
+    width: 75px;
+    height: 1.5vw;
+    margin-top: 1vw;
+    background-color: black;
+    color: white;
+    border: none;
+}
+
+#submit:hover{
+    background-color: white;
+    color: black;
+}
+
+#footer-bottom{
+    margin-top: 10px;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    margin-bottom: 10px;
+    color: var(--offwhite);
 }
