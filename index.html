@@ -1,42 +1,118 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Eco-Friendly Soaps</title>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoBlue</title>
+</head>
+<body>
 
-        <!-- Navigation Bar -->
-        <div id="navbar">
-            <img src="./res/logo.png" height="100%" style="float: left;" />
-            <h3>[Product Name]</h3>
-            <a class="navlink" id="login" href="./login.html"><b>Log In</b></a>
-            <a class="navlink" id="quiz" href="./quiz.html"><b>Take Quiz</b></a>
-            <a class="navlink" href="./resources.html"><b>Resources</b></a>
-            <a class="navlink" href="./about.html"><b>About</b></a>
-            <a class="navlink" href="./index.html"><b><u>Home</u></b></a>
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <div class="name">
+            <img src="./res/logo.png" height="100%" style="float: left;" /> 
+            <div id="h3">EcoBlue</div>
         </div>
-
-        <!-- Left Column -->
-        <div class="left">
-            <div  style="background: lightgreen;">
-                <h2>Build Better Grey Water</h2>
-                <p>By taking a short survey, we can create an eco-friendly cleaning agent tailored to your water use.</p>
-                <button onclick="location.href='./quiz.html';">Find Your Cleaner</button>
+        <ul id="body" class="navLink">
+            <div>
+                <li><a href="./index.html" class="home" id="active">Home</a></li>
+                <li><a href="about.html" class="about">About</a></li>
+                <li><a href="resources.html"  class="Resources">Resources</a></li>
             </div>
+            <div>
+                <li><a href="./quiz.html" id="takeQuiz" class="chat">Take Quiz</a></li>
+                <li><a href="./producst.html" class="profile">Products</a></li>
+                <a href="#" id="login"><button>Get Started</button></a> 
+            </div>
+        </ul>    
         </div>
-
-        <!-- Right Column -->
-        <div class="right">
-            <div style="background: skyblue;">
-                <h2>What is Grey Water?</h2>
-                <p>Grey water is the relatively clean waste water from baths, sinks, washing machines, and other kitchen appliances...</p>
-            </div>
-            <div style="background: skyblue;"> 
-                <h2>Why is Grey Water Important?</h2>
-                <p>The International Energy Agency projects that at current rates, freshwater used for water production will double over the next 25 years. At the current pace, there will not be enough freshwater available to meet global energy needs by 2040...</p>
-            </div>
+    </nav>
+    
+    <section class="landing">
+        <div class="infoText">
+            <div id="h1">Building Better Water</div>
+            <div id="body">Customizable cleaning products tailored for your needs</div>
+            <button id="body" class="takeQuiz" href="quiz.html">Take Quiz ></button>
         </div>
+        <div class="titleImage">
+            <img src="images/random.jpg" alt="">
+        </div>
+    </section>
 
-    </body>
-</html>
+    <!--Water Scarcity in Canada-->
+    <section class="content-section">
+        <div class="infoText">
+            <div id="h2">Water Scarcity in Canada</div>
+            <div id="body">Discover your ESG values and choose the winning stock in our weekly challenges </div>
+            <div class="learnMore">Learn More →</div>
+        </div>
+        <div class="factsImg">
+            <img src="images/water scacriy.jpg" alt="">
+        </div>
+    </section>
+
+    <!--What you can do to combat water scarcity-->
+    <section class="content-section">
+        <div class="factsImg">
+            <img src="images/grey water.jpg" alt="">
+        </div>
+        <div class="infoText">
+            <div id="h2">What you can do to combat water scarcity</div>
+            <div id="body">Discover your ESG values and choose the winning stock in our weekly challenges </div>
+            <div class="learnMore">Learn More →</div>
+        </div>
+        
+    </section>
+
+
+    <!--Meet our amazing supplier-->
+    <section class="content-section">
+        <div class="infoText">
+            <div id="h2">Meet our amazing supplier</div>
+            <div id="body">Discover your ESG values and choose the winning stock in our weekly challenges </div>
+            <div class="learnMore">Learn More →</div>
+        </div>
+        <div class="factsImg">
+            <img src="images/suppliers.png.crdownload" alt="">
+        </div>
+    </section>
+
+    <section class="findCleaner">
+        <div id="h1">Find your perfect sustainable cleaning solution</div>
+        <button id="body" class="takeQuiz" href="quiz.html">Take Quiz ></button>
+    </section>
+
+    <!--Footer Section-->
+    <section id="footer">
+        <footer>
+            <div id="footer-title">
+                <div id="h2">Thanks for stopping by!</div>
+                <div id="body">Feel free to reach out to us, we would love to talk to you!😊</div>
+            </div>
+            <div id="form">
+                <div id="h3">Contact Us!</div>
+                <form action="https://formsubmit.co/kelly.g.guan@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" name="submit" id="submit">Send</button>
+                    <input type="hidden" name="_next" value="https://www.kellyguan.tech/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            
+        </footer>
+        <div id="footer-bottom">
+            <div id="body">© July Shad Waterloo 2021 Kiran, Chaturrvi, Veronica, Annika, Eshan, Hamza, Anne-Marie, Joe, Kelly</div>
+        </div>
+    </section>
+
+
+    
+</body>
+</html>          
