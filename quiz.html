@@ -1,7 +1,9 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="quizStyle.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="quizScript.js"></script>
         <title>Eco-Friendly Soaps</title>
     </head>
     <body>
@@ -9,7 +11,7 @@
         <!-- Navigation Bar -->
         <div id="navbar">
             <img src="./res/logo.png" height="100%" style="float: left;" />
-            <h3>[Product Name]</h3>
+            <h3>EcoBlue</h3>
             <a class="navlink" id="login" href="./login.html"><b>Log In</b></a>
             <a class="navlink" id="quiz" href="./quiz.html"><b><u>Take Quiz</u></b></a>
             <a class="navlink" href="./resources.html"><b>Resources</b></a>
@@ -17,25 +19,187 @@
             <a class="navlink" href="./index.html"><b>Home</b></a>
         </div>
 
-        <!-- Left Column -->
-        <div class="left">
-            <div  style="background: lightgreen;">
-                <h2>Left</h2>
-                <p>Left</p>
+        <!-- Quiz -->
+        <form id="quizForm">
+
+            <!-- Q1 -->
+            <div id="Q1" style="left: 0%;">
+                <h2>Where will this cleaning product be used?</h2>
+                <label>
+                    <input type="radio" name="Q1" value="K" checked>
+                    <figure>
+                        <img src="./res/Q1-0.png">
+                        <figcaption>Kitchen</figcaption>
+                    </figure>
+                </label>
+                
+                <label>
+                    <input type="radio" name="Q1" value="L">
+                    <figure>
+                        <img src="./res/Q1-1.png">
+                        <figcaption>Laundry</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q1" value="W">
+                    <figure>
+                        <img src="./res/Q1-2.png">
+                        <figcaption>Washroom</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q1" value="O">
+                    <figure>
+                        <img src="./res/Q0-0.png">
+                        <figcaption>Other</figcaption>
+                    </figure>
+                </label>
             </div>
+
+            <!-- Q2 -->
+            <div id="Q2" style="left: 100%;">
+                <h2>In which area do you live?</h2>
+                <label>
+                    <input type="radio" name="Q2" value="U" checked>
+                    <figure>
+                        <img src="./res/Q2-0.png">
+                        <figcaption>Urban</figcaption>
+                    </figure>
+                </label>
+                
+                <label>
+                    <input type="radio" name="Q2" value="R">
+                    <figure>
+                        <img src="./res/Q2-1.png">
+                        <figcaption>Rural</figcaption>
+                    </figure>
+                </label>
+
+                <label>
+                    <input type="radio" name="Q2" value="O">
+                    <figure>
+                        <img src="./res/Q0-0.png">
+                        <figcaption>Other</figcaption>
+                    </figure>
+                </label>
+            </div>
+
+            <!-- Q3 -->
+            <div id="Q3" style="left: 200%;">
+                <h2>How will you be reusing your greywater?</h2>
+                <label>
+                    <input type="radio" name="Q3" value="G" checked>
+                    <figure>
+                        <img src="./res/Q3-0.png">
+                        <figcaption>Gardening</figcaption>
+                    </figure>
+                </label>
+                
+                <label>
+                    <input type="radio" name="Q3" value="L">
+                    <figure>
+                        <img src="./res/Q3-1.png">
+                        <figcaption>Watering Lawn</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q3" value="P">
+                    <figure>
+                        <img src="./res/Q3-2.png">
+                        <figcaption>Plumbing</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q3" value="D">
+                    <figure>
+                        <img src="./res/Q3-3.png">
+                        <figcaption>Don't Know</figcaption>
+                    </figure>
+                </label>
+
+                <label>
+                    <input type="radio" name="Q3" value="O">
+                    <figure>
+                        <img src="./res/Q0-0.png">
+                        <figcaption>Other</figcaption>
+                    </figure>
+                </label>
+            </div>
+
+            <!-- Q4 -->
+            <div id="Q4" style="left: 300%;">
+                <h2>Where is your water output?</h2>
+                <label>
+                    <input type="radio" name="Q4" value="M" checked>
+                    <figure>
+                        <img src="./res/Q4-0.png">
+                        <figcaption>Municipal Output</figcaption>
+                    </figure>
+                </label>
+                
+                <label>
+                    <input type="radio" name="Q4" value="S">
+                    <figure>
+                        <img src="./res/Q4-1.png">
+                        <figcaption>Sea/Ocean</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q4" value="D">
+                    <figure>
+                        <img src="./res/Q3-3.png">
+                        <figcaption>Don't Know</figcaption>
+                    </figure>
+                </label>
+    
+                <label>
+                    <input type="radio" name="Q4" value="O">
+                    <figure>
+                        <img src="./res/Q0-0.png">
+                        <figcaption>Other</figcaption>
+                    </figure>
+                </label>
+            </div>
+
+            <!-- Q5 -->
+            <div id="Q5" style="left: 400%;">
+                <h2>Which colour of cleaner would you like?</h2>
+                <label>
+                    <figure>
+                        <img src="./res/Q4-0.png">
+                        <figcaption>Choose your colour:</figcaption>
+                    </figure>
+                    <input type="color" name="Q5" value="#ffffff">
+                </label>
+            </div>
+        </form>
+
+        <!-- Q6 -->
+        <div id="Q6" style="left: 500%;">
+            <label>
+                <figure style="padding-top: 10%;">
+                    <img width="50%" src="./res/loading.gif">
+                    <figcaption>Your cleaning product is being generated...</figcaption>
+                </figure>
+            </label>
+        </div>
+    </form>
+
+
+        <div id="completion">
+            <img id="q1c" src="./res/incomplete.png">
+            <img id="q2c" src="./res/incomplete.png">
+            <img id="q3c" src="./res/incomplete.png">
+            <img id="q4c" src="./res/incomplete.png">
+            <img id="q5c" src="./res/incomplete.png">
         </div>
 
-        <!-- Right Column -->
-        <div class="right">
-            <div style="background: skyblue;">
-                <h2>Right</h2>
-                <p>Right</p>
-            </div>
-            <div style="background: skyblue;"> 
-                <h2>Right #2</h2>
-                <p>Right #2</p>
-            </div>
-        </div>
+        <input id="next" type="image" src="./res/Q-Next.png" alt="Next"/>
 
     </body>
 </html>
