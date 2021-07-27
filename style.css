@@ -40,6 +40,7 @@ body, html {
 
 a{
     color: black;
+    text-decoration: none;
 } 
 
 img{
@@ -178,7 +179,7 @@ section{
 }
 
 .factsImg{
-    width: 40rem;
+    width: 30rem;
 }
 
 .findCleaner{
@@ -213,13 +214,13 @@ section{
 }
 
 .dt6 div{
-    margin-inline: 4rem;
+    margin-inline: 1rem;
 }
 
 .whoAreWe{
     align-items: center;
     justify-content: center;
-    background-color: #FFB3F3;
+    background-color: #ffe4f6;
     height: 48rem;
     margin-bottom: 10rem;
 }
@@ -239,7 +240,7 @@ section{
     width: 100%;
     position: relative;
     bottom: 0;
-    background-color: #2A9046;
+    background-color: #cee7f8;
 }
 
 #footer #h2{
