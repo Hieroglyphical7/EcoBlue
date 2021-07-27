@@ -1,41 +1,116 @@
-<html>
-    <head>
-        <meta charset="utf-8">
-        <link rel="stylesheet" href="style.css">
-        <title>Eco-Friendly Soaps</title>
-    </head>
-    <body>
-
-        <!-- Navigation Bar -->
-        <div id="navbar">
-            <img src="./res/logo.png" height="100%" style="float: left;" />
-            <h3>[Product Name]</h3>
-            <a class="navlink" id="login" href="./login.html"><b>Log In</b></a>
-            <a class="navlink" id="quiz" href="./quiz.html"><b>Take Quiz</b></a>
-            <a class="navlink" href="./resources.html"><b>Resources</b></a>
-            <a class="navlink" href="./about.html"><b><u>About</u></b></a>
-            <a class="navlink" href="./index.html"><b>Home</b></a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>EcoBlue</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div id="navbar">
+        <div class="name">
+            <img src="./res/logo.png" height="100%" style="float: left;" /> 
+            <div id="h3">EcoBlue</div>
         </div>
-
-        <!-- Left Column -->
-        <div class="left">
-            <div  style="background: lightgreen;">
-                <h2>Left</h2>
-                <p>Left</p>
+        <ul id="body" class="navLink">
+            <div>
+                <li><a href="./index.html" class="home">Home</a></li>
+                <li><a href="about.html" class="about" id="active">About</a></li>
+                <li><a href="resources.html"  class="Resources">Resources</a></li>
             </div>
+            <div>
+                <li><a href="./quiz.html" id="takeQuiz" >Take Quiz</a></li>
+                <li><a href="./producst.html" class="profile">Products</a></li>
+                <a href="#" id="login"><button>Get Started</button></a> 
+            </div>
+        </ul>    
         </div>
+    </nav>
 
-        <!-- Right Column -->
-        <div class="right">
-            <div style="background: skyblue;">
-                <h2>Right</h2>
-                <p>Right</p>
-            </div>
-            <div style="background: skyblue;"> 
-                <h2>Right #2</h2>
-                <p>Right #2</p>
-            </div>
+    <!--design Team 6-->
+    <section class="dt6">
+        <div class="factsImg">
+            <img src="images/shad.png.crdownload" alt="">
         </div>
+        <div class="infoText">
+            <div id="h1">hey, we’re design team 6.</div>
+            <div id="body">a team of young innovative high schoolers from across Canada </div>
+            <div><button id="body" class="takeQuiz" href="quiz.html">Take Quiz ></button></div>
+        </div>
+    </section>
 
-    </body>
+    <!--who?-->
+    <section class="whoAreWe"> 
+        <div id="h2">What do you get when 8 innovative high schoolers attend SHAD Waterloo?</div>
+            <div id="body">Apparently, the coolest design project!</div>
+            <img src="images/DT6Photo.png" alt="">
+
+        </div>
+    </section>
+
+    <!--the problem-->
+    <section class="content-section">
+        <div class="factsImg">
+            <img src="images/water.jpg" alt="">
+        </div>
+        <div class="infoText">
+            <div id="h2">The Problem</div>
+            <div id="body">Water crisis in Canada (general facts/stats)
+                With global temperatures rising, Canada’s abundant freshwater resources have been facing challenges
+                Toxic waste in oceans, algae blooms in lakes, microplastics
+                Canadians need to be more aware of what they are putting down their drains and how they affect their surrounding aquatic ecosystems
+            </div>
+            <div><button id="body" class="takeQuiz" href="quiz.html">Take Quiz ></button></div>
+        </div>
+        
+    </section>
+
+    <!--Building Better Water-->
+    <section class="content-section">
+        <div class="infoText">
+            <div id="h2">Building Better Water</div>
+            <div id="body">Water crisis in Canada (general facts/stats)
+                With global temperatures rising, Canada’s abundant freshwater resources have been facing challenges
+                Toxic waste in oceans, algae blooms in lakes, microplastics
+                Canadians need to be more aware of what they are putting down their drains and how they affect their surrounding aquatic ecosystems
+            </div>
+            <div><button id="body" class="takeQuiz" href="quiz.html">Take Quiz ></button></div>
+        </div>
+        
+        <div class="factsImg">
+            <img src="images/1704-Continuing-Education-Floating-Buildings-01.jpg" alt="">
+        </div>
+    </section>
+
+    <!--Footer Section-->
+    <section id="footer">
+        <footer>
+            <div id="footer-title">
+                <div id="h2">Thanks for stopping by!</div>
+                <div id="body">Feel free to reach out to us, we would love to talk to you!😊</div>
+            </div>
+            <div id="form">
+                <div id="h3">Contact Us!</div>
+                <form action="https://formsubmit.co/kelly.g.guan@gmail.com" method="POST">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <input type="text" name="subject" placeholder="Subject" required>
+                    <textarea name="message" placeholder="Message" required></textarea>
+                    <button type="submit" name="submit" id="submit">Send</button>
+                    <input type="hidden" name="_next" value="https://www.kellyguan.tech/">
+                    <input type="hidden" name="_captcha" value="false">
+                </form>
+            </div>
+            
+        </footer>
+        <div id="footer-bottom">
+            <div id="body">© July Shad Waterloo 2021 Kiran, Chaturrvi, Veronica, Annika, Eshan, Hamza, Anne-Marie, Joe, Kelly</div>
+        </div>
+    </section>
+
+</body>
 </html>
