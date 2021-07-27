@@ -10,8 +10,8 @@ $(document).ready(function(){
             $("#completion").animate({bottom: "-500%"});
             $("#next").animate({bottom: "-500%"});
 
-            setTimeout(function() { document.getElementById("quizForm").submit(); }, 3000);
-            setTimeout(function() { window.location.href = "product.html"; }, 3000);
+            //setTimeout(function() { document.getElementById("quizForm").submit(); }, 3000);
+            //setTimeout(function() { window.location.href = "product.html"; }, 3000);
         }
         for(let i = 0; i < 6; i++){
             $("#Q" + (i+1)).animate({left: (i*100 - 100 * num) + "%"});
